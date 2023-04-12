@@ -1,0 +1,197 @@
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-mainBG: hsl(217, 54%, 11%);
+  --Very-dark-blue-cardBG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsla(0, 0%, 100%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.containerPrime {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Very-dark-blue-mainBG);
+  display: grid;
+  place-items: center;
+}
+.container {
+  width: 255px;
+  height: 435px;
+  background-color: var(--Very-dark-blue-cardBG);
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  box-sizing: border-box;
+  box-shadow: 0px 25px 25px 0px rgb(28, 23, 31);
+}
+.top {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  padding: 1.7rem 1.7rem 0 1.7rem;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2%;
+  background-position: center;
+  position: relative;
+}
+#image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 1;
+}
+#eye{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  filter: opacity(0%);
+  padding: 9rem 9rem 9rem 9rem;
+  z-index: 3;
+  background-color: hsla(178, 100%, 50%, 0.5);
+}
+.backgroundEye{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 2;
+}
+.bottom {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+  padding: 1.7rem 1.9rem 1.7rem 1.9rem;
+}
+h1 {
+  color: var(--White);
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  height: 20%;
+}
+.paragraph {
+  color: var(--White);
+  line-height: 1.9rem;
+  font-size: 1.31rem;
+  font-weight: 300;
+  height: 20%;
+}
+.priceAndTime {
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+  box-sizing: border-box;
+  height: 25%;
+  padding: 1.1rem 0 1.1rem 0;
+}
+.price {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.iconEheterium {
+  width: 8%;
+  height: 100%;
+}
+.etheriumParagraph {
+  color: var(--White);
+  font-size: 1.2rem;
+  padding-left: 0.4rem;
+}
+.timeAgo {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 0 0 1rem;
+}
+.iconClock {
+  width: 9%;
+  height: 100%;
+}
+.timeParagraph {
+  color: var(--White);
+  font-size: 1.2rem;
+  padding-left: 0.4rem;
+}
+.line {
+  background-color: var(--Soft-blue);
+  padding-bottom: 0.1rem;
+  height: 5%;
+}
+.author {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0;
+}
+.imageAvatar {
+  object-fit: cover;
+  width: 100%;
+  box-sizing: border-box;
+}
+.avatar {
+  width: 10%;
+  height: 60%;
+  object-fit: cover;
+  border-radius: 50%;
+  border-color: var(--White);
+  border-width: thin;
+  border-style: solid;
+}
+.creation {
+  padding-left: 1rem;
+  color: var(--Soft-blue);
+  font-size: 1.2rem;
+}
+.nameCreathor {
+  color: var(--White);
+  font-size: 1.2rem;
+}
+
+h1:hover {
+  color: var(--Soft-blue);
+  cursor: pointer;
+}
+.image:hover {
+  cursor: pointer;  
+}
+#image:hover {
+  cursor: pointer;
+}
+#eye:hover{
+  filter: opacity(100%);
+}
+.nameCreathor:hover {
+  color: var(--Soft-blue);
+  cursor: hand;
+  cursor: pointer;
+}
